@@ -8,7 +8,8 @@ An Esperanto helper Chrome extension
 	- For example: `cx` → `ĉ`, `gx` → `ĝ`, `hx` → `ĥ`, `jx` → `ĵ`, `sx` → `ŝ`, `ux` → `ŭ`
 	- This input method is referenced from <http://lernu.net>
 	- Current support website:
-		- <http://www.duolingo.cn>
+		- [Duolingo](http://www.duolingo.cn)
+		- [Google Translate](https://translate.google.com)
 
 
 ## Install

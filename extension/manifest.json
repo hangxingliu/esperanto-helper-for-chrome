@@ -1,0 +1,38 @@
+{
+	"manifest_version": 2,
+	"name": "Esperanto Helper",
+	"version": "1.0.0",
+	"description": "Input esperanto easy",
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.duolingo.cn/*",
+				"*://*.duolingo.com/*"
+			],
+			"run_at": "document_end",
+			"all_frames": false,
+			"js": [
+				"scripts/inject/duolingo-input.js"
+			]
+		},
+		{
+			"matches": [
+				"*://translate.google.com/*"
+			],
+			"run_at": "document_end",
+			"all_frames": false,
+			"js": [
+				"scripts/inject/google-translate-input.js"
+			]
+		}
+	],
+	"icons": {
+		"48": "icons/48.png",
+		"128": "icons/128.png"
+	},
+	"permissions": [
+		"tabs",
+		"notifications",
+		"*://*/*"
+	]
+}

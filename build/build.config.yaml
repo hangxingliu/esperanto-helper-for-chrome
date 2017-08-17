@@ -26,8 +26,8 @@ hook:
 
 processor:
     source_map: 
-        enable: false
-        js: false
+        enable: true
+        js: true
         css: false
     watchify:
         delay: 100

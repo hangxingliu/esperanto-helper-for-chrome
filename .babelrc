@@ -1,4 +1,15 @@
 {
+	"plugins": [
+		"minify-guarded-expressions",
+		"minify-mangle-names",
+		"minify-simplify",
+		"minify-type-constructors",
+
+		"transform-merge-sibling-variables",
+		"transform-minify-booleans",
+		"transform-simplify-comparison-operators",
+		"transform-undefined-to-void"
+	],
 	"compact": "true",
 	"comments": false
 }

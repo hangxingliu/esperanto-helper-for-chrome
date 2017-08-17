@@ -22,7 +22,9 @@ function error(description = '', ex = null) {
 	console.error(description, ex ? (ex.stack || ex) : '');
 }
 
-function init(injectScriptName) {
+function init(injectScriptName = '') {
+	let sep = injectScriptName.lastIndexOf('/');
+	if (sep >= 0) injectScriptName = injectScriptName.slice(sep + 1);
 	log(`${injectScriptName} has been injected!`);
 	return exportObject;
 }

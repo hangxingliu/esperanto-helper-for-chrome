@@ -8,7 +8,7 @@
 //
 //inject-info-end
 
-require('./utils/logger').init('duolingo-input.js');
+require('./utils/logger').init(__filename);
 
 let { UniqueCharacters } = require('./utils/esperanto');
 
